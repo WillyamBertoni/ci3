@@ -13,17 +13,10 @@ class DatabaseTest extends CI_Controller {
 
     public function index()
     {
-        // Memuat model
-        //$this->load->model('DatabaseTest_model');
-        
-        // Mengambil data dari database
-        $data = $this->DatabaseTest_model->get_data();
-        
-        // Menampilkan data di view
-
-        //$data['view_data'] = $this->view_data->get_data();
-        $data['title_page'] = "Tampil Data";
-
-        $this->load->view('DatabaseTest_view');
+        // Ambil Data
+       $data['cara_keluar'] = $this->DatabaseTest_model->get_data();
+       
+       // Kirim ke view
+       $this->load->view('DatabaseTest_view', $data); 
     } 
 } 

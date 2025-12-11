@@ -24,13 +24,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        
+                        <?php foreach ($cara_keluar as $view_data): ?>
                             <tr>
                                 <td><?php echo $view_data->kd_statuskeluar ?></td>
                                 <td><?php echo $view_data->kd_instalasi ?></td>
                                 <td><?php echo $view_data->aktif ?></td>
                             </tr>
                         </tbody>
+                        <?php endforeach; ?>
                 </table>                                
             </div>
         </div>
