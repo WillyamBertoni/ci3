@@ -1,0 +1,41 @@
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb ">
+        </ol>
+    </nav>
+    
+    <!-- DataTables Example -->
+    <div class="card shadow">
+    
+        <div class="card-header d-sm-flex align-items-center justify-content-between">
+            <a href="#" onClick="window.location.reload();" class="continue d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-sync fa-sm text-white-50"></i> Refresh</a>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped nowrap text-gray-900" id="dataTable" style="font-size: 13px;" width="100%" cellspacing="0">
+                    <thead>
+                        <tr class="table-success">
+                            <th scope="col">NO.</th>
+                            <th scope="col">NO. REG</th>
+                            <th scope="col">NO. RM</th>                          
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            <tr>
+                                <td><?php echo $view_data->kd_statuskeluar ?></td>
+                                <td><?php echo $view_data->kd_instalasi ?></td>
+                                <td><?php echo $view_data->aktif ?></td>
+                            </tr>
+                        </tbody>
+                </table>                                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.container-fluid -->
+</div>
+<!-- End of Main Content -->
