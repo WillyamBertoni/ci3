@@ -28,7 +28,7 @@
                             <tr>
                                 <td><?php echo $view_data->kd_statuskeluar ?></td>
                                 <td><?php echo $view_data->kd_instalasi ?></td>
-                                <td><?php echo $view_data->aktif ?></td>
+                                <td><?php echo $view_data->ktif ?></td>
                             </tr>
                         </tbody>
                         <?php endforeach; ?>

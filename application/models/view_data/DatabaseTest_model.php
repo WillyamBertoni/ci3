@@ -13,7 +13,7 @@ class DatabaseTest_model extends CI_Model {
     public function get_data()
     {
         // Query untuk mengambil data
-        $query = $this->db->query("SELECT * FROM master.cara_keluar");
+        $query = $this->db->query("SELECT * FROM cara_keluar");
         return $query->result();
     }
 }
