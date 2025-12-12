@@ -15,6 +15,8 @@ class DatabaseTest extends CI_Controller {
     {
         // Ambil Data
        $data['cara_keluar'] = $this->DatabaseTest_model->get_data();
+
+       $data['title_page'] = "Data Tabel";
        
        // Kirim ke view
        $this->load->view('DatabaseTest_view', $data); 
